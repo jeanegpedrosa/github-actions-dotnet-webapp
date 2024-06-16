@@ -18,7 +18,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '14'
+        node-version: '16'
 
     - name: Install dependencies
       run: npm install
@@ -37,5 +37,6 @@ jobs:
     - name: Run custom script
       run: |
         echo "Running custom script..."
-        # Adicione aqui o seu script personalizado
-        ./custom-script.sh
+        npm install
+        npm run build 
+        npm run test
