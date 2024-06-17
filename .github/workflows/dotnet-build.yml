@@ -36,5 +36,6 @@ jobs:
         echo "Running custom script..."
         npm install
         npm install eslint-config-react-app
+        npm install --save-dev @babel/plugin-proposal-private-property-in-object
         npm run build 
         npm run test
