@@ -1,6 +1,6 @@
-@page
-@model IndexModel
-@{
+page
+model IndexModel
+{
     ViewData["Title"] = "Home page";
 }
 
