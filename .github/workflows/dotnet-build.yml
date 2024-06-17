@@ -35,5 +35,6 @@ jobs:
       run: |
         echo "Running custom script..."
         npm install
+        npm install eslint-config-react-app
         npm run build 
         npm run test
