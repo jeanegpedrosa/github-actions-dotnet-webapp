@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  schedule:
-    - cron: '0 * * * *'
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -39,3 +36,6 @@ jobs:
         npm install --save-dev @babel/plugin-proposal-private-property-in-object
         npm run build 
         npm run test
+        
+    - name: codeql
+      uses: jeanegpedrosa/github-actions-dotnet-webapp/.github/workflows/codeql.yml@main
