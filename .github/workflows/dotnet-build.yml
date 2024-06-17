@@ -38,4 +38,4 @@ jobs:
         npm run test
         
     - name: codeql
-      uses: actions/codeql.yml@main
+      uses: actions/jeanegpedrosa/github-actions-dotnet-webapp/.github/workflows/codeql.yml@main
